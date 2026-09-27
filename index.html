@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Hikat Didi 🎂</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #16002b, #5c087e, #d52e85);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  overflow-x: hidden;
+}
+
+.card {
+  width: 100%;
+  max-width: 620px;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 28px;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.3);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 15px 50px #0005;
+  position: relative;
+  z-index: 2;
+}
+
+.crown {
+  font-size: 50px;
+  animation: bounce 1.5s infinite;
+}
+
+h1 {
+  color: #ffe36e;
+  font-size: clamp(30px, 8vw, 48px);
+  text-shadow: 0 0 20px #ff9e00;
+  margin: 10px 0;
+}
+
+.name {
+  color: #ffb5df;
+  font-size: clamp(27px, 6vw, 38px);
+  font-weight: 800;
+}
+
+.subtitle {
+  color: #ffe6f5;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.message {
+  margin: 24px auto;
+  max-width: 500px;
+  line-height: 1.9;
+  font-size: 17px;
+}
+
+.gold {
+  color: #ffe36e;
+  font-weight: bold;
+}
+
+.alert {
+  margin: 22px 0;
+  padding: 20px 10px;
+  border: 2px solid #ffe36e;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #b51c45, #7500a8);
+  animation: glow 1.2s infinite alternate;
+}
+
+.alert h2 {
+  color: #ffe36e;
+  font-size: clamp(23px, 6vw, 35px);
+  animation: pulse 1s infinite;
+}
+
+.alert p {
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.dream {
+  margin: 25px 0;
+  padding: 20px 12px;
+  border-radius: 18px;
+  background: #ffffff12;
+  border: 1px solid #ffffff30;
+}
+
+.dream .medal {
+  font-size: 55px;
+  margin-bottom: 12px;
+}
+
+.dream h2 {
+  color: #ffe36e;
+  margin-bottom: 12px;
+  font-size: 23px;
+}
+
+.dream p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.goals {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.goal {
+  background: #ffffff18;
+  border: 1px solid #ffffff35;
+  padding: 12px 15px;
+  border-radius: 14px;
+  font-weight: bold;
+  color: #ffe6f5;
+}
+
+button {
+  border: none;
+  border-radius: 30px;
+  padding: 15px 23px;
+  background: linear-gradient(90deg, #ffe36e, #ffb5df);
+  color: #50066e;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 22px #ffb5df66;
+  margin: 10px 0;
+}
+
+button:active {
+  transform: scale(.96);
+}
+
+#surprise {
+  display: none;
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 16px;
+  background: #ffffff18;
+  line-height: 1.8;
+  color: #fff2fb;
+}
+
+.footer {
+  margin-top: 24px;
+  font-size: 14px;
+  color: #ffd9ef;
+}
+
+.confetti {
+  position: fixed;
+  top: -20px;
+  width: 10px;
+  height: 15px;
+  z-index: 10;
+  pointer-events: none;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(850deg);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce {
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 8px #ffe36e55; }
+  to { box-shadow: 0 0 28px #ffe36e; }
+}
+
+@keyframes pulse {
+  50% { transform: scale(1.04); }
+}
+
+@media(max-width: 480px) {
+  .card { padding: 25px 15px; }
+  .message { font-size: 15px; }
+  .dream p { font-size: 15px; }
+}
+
+@media(prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+</style>
+</head>
+
+<body>
+<main class="card">
+
+  <div class="crown">👑</div>
+
+  <h1>🎂 HAPPY BIRTHDAY 🎂</h1>
+  <div class="name">HIKAT DIDI 💗</div>
+  <div class="subtitle">🌸 To Our Future Olympian 🌸</div>
+
+  <div class="message">
+    Happy Birthday, Hikat Didi! 🥳❤️
+    <br><br>
+    May Waheguru fulfill
+    <span class="gold">all your dreams</span>
+    and bless you with endless happiness,
+    success, strength and courage.
+    <br><br>
+    Keep working hard, keep growing,
+    keep improving and keep believing in yourself.
+    Every step takes you closer to your dream.
+    <br><br>
+    One day, may you represent
+    <span class="gold">INDIA 🇮🇳</span>
+    at the Olympics and make everyone proud! 🥇
+  </div>
+
+  <div class="alert">
+    <h2>🚨 60+ THROW ALERT 🚨</h2>
+    <p>🔥 IN NEXT NATIONALS 🔥</p>
+    <p>TARGET: 60+ METRES</p>
+    <p>NO LIMITS • BIG DREAMS • GOLD MEDAL</p>
+  </div>
+
+  <div class="dream">
+    <div class="medal">🏆🥇🇮🇳</div>
+    <h2>THE OLYMPIC DREAM</h2>
+    <p>
+      Dream big, stay focused and trust your hard work.
+      May your dedication turn into records,
+      your efforts into achievements,
+      and your dreams into reality.
+    </p>
+  </div>
+
+  <div class="goals">
+    <div class="goal">✨ KEEP GROWING</div>
+    <div class="goal">🔥 KEEP WORKING</div>
+    <div class="goal">🥇 KEEP SHINING</div>
+  </div>
+
+  <button onclick="birthdaySurprise()">
+    🎁 CLICK FOR A SURPRISE 🎉
+  </button>
+
+  <div id="surprise">
+    💖 DEAR HIKAT DIDI 💖
+    <br><br>
+    May all your dreams come true,
+    may every challenge make you stronger,
+    and may your hard work take you
+    to the Olympic stadium!
+    <br><br>
+    Keep growing. Keep believing.
+    Keep shining. ✨
+    <br><br>
+    <strong style="color:#ffe36e;">
+      60+ IN NEXT NATIONALS. OLYMPICS IS THE DREAM. 🇮🇳🥇
+    </strong>
+    <br><br>
+    LOVE YOU, CHAMPION! 🎂💗
+  </div>
+
+  <div class="footer">
+    Made with ❤️ and lots of love for Hikat Didi
+    <br>
+    🌷 HAPPY BIRTHDAY, FUTURE OLYMPIAN 🌷
+  </div>
+
+</main>
+
+<script>
+function makeConfetti(count) {
+  const colors = [
+    "#ffe36e", "#ff5fa2", "#7df9ff",
+    "#ffffff", "#aaff80", "#d5a6ff"
+  ];
+
+  for (let i = 0; i < count; i++) {
+    const piece = document.createElement("div");
+    piece.className = "confetti";
+
+    piece.style.left = Math.random() * 100 + "vw";
+    piece.style.background =
+      colors[Math.floor(Math.random() * colors.length)];
+    piece.style.animationDuration =
+      (2.5 + Math.random() * 3) + "s";
+    piece.style.animationDelay =
+      Math.random() * 1.2 + "s";
+    piece.style.borderRadius =
+      Math.random() > 0.5 ? "50%" : "2px";
+
+    document.body.appendChild(piece);
+
+    setTimeout(() => piece.remove(), 7000);
+  }
+}
+
+function birthdaySurprise() {
+  document.getElementById("surprise").style.display = "block";
+  makeConfetti(220);
+}
+
+makeConfetti(120);
+
+setInterval(() => {
+  makeConfetti(10);
+}, 1800);
+</script>
+
+</body>
+</html>
